@@ -5,6 +5,8 @@
         src="<%= image_url %>"
         alt="<%= name %> portrait"
         class="w-full max-w-xs lg:max-w-sm xl:max-w-xl"
+        loading="lazy"
+        decoding="async"
       >
       <a
         href="<%= profile_url %>"
@@ -14,6 +16,10 @@
           src="<%= image_path("logo-g.svg") %>"
           alt="Gumroad icon"
           class="w-9 h-9"
+          width="36"
+          height="36"
+          loading="lazy"
+          decoding="async"
         >
         <span class="text-lg font-medium"><%= username %></span>
       </a>
